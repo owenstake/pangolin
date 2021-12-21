@@ -1,3 +1,22 @@
+# Fix compiling problem by owen
+
+you can install pangolin like this which is ok for me now.
+
+```
+git clone https://github.com/uoip/pangolin.git
+cd pangolin
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+cd ..
+python setup.py install
+```
+
+Tested under Ubuntu 20.04, Python 3.8+.
+
+---
+
 # pangolin
 
 The project implements a python binding for 3D visualization library **[Pangolin](http://github.com/stevenlovegrove/Pangolin)**.
